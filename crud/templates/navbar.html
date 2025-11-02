@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-2" data-bs-theme="dark">
+  <div class="container-fluid">
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido colapsable -->
+    <div class="collapse navbar-collapse justify-content-between text-center" id="navbarSupportedContent">
+
+      <!-- Links principales -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url '' %}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'persona:lista' %}">Personas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'oficina:lista' %}">Oficinas</a>
+        </li>
+      </ul>
+
+      <!-- Buscador centrado -->
+      <form class="d-flex justify-content-center my-2 my-lg-0 search-form" role="search" method="get" action="{% url 'persona:lista' %}">
+        <input class="form-control me-2" type="search" name="q" placeholder="Buscar personas..." value="{{ request.GET.q }}" aria-label="Search" required/>
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+
+      <!-- Usuario / Sesión -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        {% if user.is_authenticated %}
+          <li class="nav-item d-flex align-items-center justify-content-center">
+            <span class="text-white m-0 me-2">Usuario: {{ user.username }}</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'accounts:logoutMessage' %}">Cerrar sesión</a>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'accounts:login' %}">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'accounts:signup' %}">Regístrate</a>
+          </li>
+        {% endif %}
+      </ul>
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container d-flex align-items-center justify-content-center flex-column m-auto">
+        <h2>Crear / Editar Oficina</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">Guardar</button>
+        </form>
+
+        <a href="{% url 'oficina:lista' %}">Volver</a>
+    </div>
+{% endblock %}

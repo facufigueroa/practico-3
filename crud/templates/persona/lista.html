@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <h2 class="text-center my-4">Listado de Personas</h2>
+    
+    {% if personas %}
+        <ul class="d-flex flex-column align-items-center list-unstyled mx-2">
+            
+            {% for persona in personas %}
+                <li class="d-flex flex-row align-items-center mb-3 column-gap-3">
+                    <p class="m-0">{{persona}}</p>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button class="btn btn-success" type="button">
+                            <a class="text-decoration-none text-white" href="{% url 'persona:detalle' persona.id %}">Ver</a>
+                        </button>
+                        <button class="btn btn-warning" type="button">
+                            <a class="text-decoration-none text-black" href="{% url 'persona:editar' persona.id %}">Modificar</a>
+                        </button>
+                        <button class="btn btn-danger" type="button">
+                            <a class="text-decoration-none text-white" href="{% url 'persona:eliminar' persona.id %}">Eliminar</a>
+                        </button>
+                    </div>
+                </li>
+            {% endfor %}
+                
+        </ul>
+
+        {% include "paginacionParcial.html" with page_obj=page_obj %}
+
+    {% else %}
+
+        <p>No se encontraron personas.</p>
+        <button>
+            <a class="text-decoration-none text-black" href="{% url '' %}">Volver</a>
+        </button>
+        
+    {% endif %}
+        
+{% endblock content %}
+    

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container d-flex align-items-center justify-content-center flex-column m-auto">
+        <h2>Eliminar Oficina</h2>
+        <form method="post">
+            {% csrf_token %}
+            <p>¿Estás seguro de que deseas eliminar la oficina {{ oficina.nombre }}?</p>
+            <div class="d-flex justify-content-center gap-1">
+                <button class="btn btn-outline-danger" type="submit">Confirmar eliminación</button>
+                <button class="btn btn-success">
+                    <a class="text-decoration-none text-reset" href="{% url 'oficina:lista' %}">Cancelar</a>
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

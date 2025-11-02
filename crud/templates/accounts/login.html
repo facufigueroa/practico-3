@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="container d-flex align-items-center justify-content-center flex-column m-auto">
+        <h2>Iniciar sesión</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-dark" type="submit">Iniciar sesión</button>
+            <p>¿No tienes una cuenta? <a href="{% url 'accounts:signup' %}">Regístrate</a></p>
+        </form>
+    </div>
+{% endblock content %}
+    

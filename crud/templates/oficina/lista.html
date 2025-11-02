@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2 class="text-center my-4">Listado de Oficinas</h2>
+
+    <form method="get" class="d-flex justify-content-center mb-3">
+        <input type="text" name="q" placeholder="Buscar oficinas..." value="{{ request.GET.q }}" required>
+        <button class="btn btn-secondary" type="submit">Buscar</button>
+    </form>
+    
+    {% if oficinas %}
+        
+        <ul class="d-flex flex-column align-items-center list-unstyled mx-2">
+            
+            {% for oficina in oficinas %}
+                <li class="d-flex flex-row align-items-center mb-3 column-gap-3">
+                    <p class="m-0">{{oficina}}</p>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button class="btn btn-success" type="button">
+                            <a class="text-decoration-none text-white" href="{% url 'oficina:detalle' oficina.id %}">Ver</a>
+                        </button>
+                        <button class="btn btn-warning" type="button">
+                            <a class="text-decoration-none text-black" href="{% url 'oficina:editar' oficina.id %}">Modificar</a>
+                        </button>
+                        <button class="btn btn-danger" type="button">
+                            <a class="text-decoration-none text-white" href="{% url 'oficina:eliminar' oficina.id %}">Eliminar</a>
+                        </button>
+                    </div>
+                </li>
+            {% endfor %}
+                
+        </ul>
+
+        {% include "paginacionParcial.html" with page_obj=page_obj %}
+            
+    {% else %}
+        <p>No se encontraron oficinas.</p>
+        <button>
+            <a class="text-decoration-none text-black" href="{% url '' %}">Volver</a>
+        </button>
+    {% endif %}
+        
+{% endblock content %}  

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container d-flex align-items-center justify-content-center flex-column m-auto">
+    <h2>Cerrar sesión</h2>
+    <form method="post" action="{% url 'accounts:logout' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <p>¿Estás seguro que deseas cerrar sesion?</p>
+      <div class="d-flex justify-content-center gap-1">
+        <button class="btn btn-outline-danger" type="submit">Cerrar sesión</button>
+        <button class="btn btn-success" type="submit">
+          <a class="text-decoration-none text-reset" href="{% url '' %}">Cancelar</a>
+        </button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
