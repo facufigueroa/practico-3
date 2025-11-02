@@ -537,7 +537,7 @@
   "model": "persona.persona",
   "pk": 11,
   "fields": {
-    "nombre": "Raúl",
+    "nombre": "Raul",
     "apellido": "Torres",
     "edad": 28,
     "oficina": 30
@@ -567,8 +567,8 @@
   "model": "persona.persona",
   "pk": 14,
   "fields": {
-    "nombre": "María",
-    "apellido": "García",
+    "nombre": "Maria",
+    "apellido": "Garcia",
     "edad": 36,
     "oficina": 18
   }
@@ -578,7 +578,7 @@
   "pk": 15,
   "fields": {
     "nombre": "Pedro",
-    "apellido": "Díaz",
+    "apellido": "Diaz",
     "edad": 37,
     "oficina": 20
   }
@@ -588,7 +588,7 @@
   "pk": 16,
   "fields": {
     "nombre": "Ana",
-    "apellido": "Sánchez",
+    "apellido": "Sanchez",
     "edad": 26,
     "oficina": 11
   }
@@ -598,7 +598,7 @@
   "pk": 17,
   "fields": {
     "nombre": "Valentina",
-    "apellido": "García",
+    "apellido": "Garcia",
     "edad": 57,
     "oficina": 31
   }
@@ -618,7 +618,7 @@
   "pk": 19,
   "fields": {
     "nombre": "Marta",
-    "apellido": "Hernández",
+    "apellido": "Hernandez",
     "edad": 59,
     "oficina": 22
   }
@@ -627,8 +627,8 @@
   "model": "persona.persona",
   "pk": 20,
   "fields": {
-    "nombre": "Raúl",
-    "apellido": "Martínez",
+    "nombre": "Raul",
+    "apellido": "Martinez",
     "edad": 30,
     "oficina": 14
   }
@@ -658,7 +658,7 @@
   "pk": 23,
   "fields": {
     "nombre": "Laura",
-    "apellido": "García",
+    "apellido": "Garcia",
     "edad": 24,
     "oficina": 6
   }
@@ -697,7 +697,7 @@
   "model": "persona.persona",
   "pk": 27,
   "fields": {
-    "nombre": "María",
+    "nombre": "Maria",
     "apellido": "Flores",
     "edad": 35,
     "oficina": 4
@@ -728,7 +728,7 @@
   "pk": 30,
   "fields": {
     "nombre": "Valentina",
-    "apellido": "López",
+    "apellido": "Lopez",
     "edad": 38,
     "oficina": 14
   }
@@ -737,8 +737,8 @@
   "model": "persona.persona",
   "pk": 31,
   "fields": {
-    "nombre": "Raúl",
-    "apellido": "López",
+    "nombre": "Raul",
+    "apellido": "Lopez",
     "edad": 37,
     "oficina": 33
   }
@@ -747,8 +747,8 @@
   "model": "persona.persona",
   "pk": 32,
   "fields": {
-    "nombre": "Sofía",
-    "apellido": "Díaz",
+    "nombre": "Sofia",
+    "apellido": "Diaz",
     "edad": 26,
     "oficina": 23
   }
@@ -757,8 +757,8 @@
   "model": "persona.persona",
   "pk": 33,
   "fields": {
-    "nombre": "Raúl",
-    "apellido": "Ramírez",
+    "nombre": "Raul",
+    "apellido": "Ramirez",
     "edad": 38,
     "oficina": 15
   }
@@ -768,7 +768,7 @@
   "pk": 34,
   "fields": {
     "nombre": "Laura",
-    "apellido": "Pérez",
+    "apellido": "Perez",
     "edad": 32,
     "oficina": 18
   }
@@ -777,7 +777,7 @@
   "model": "persona.persona",
   "pk": 35,
   "fields": {
-    "nombre": "Sofía",
+    "nombre": "Sofia",
     "apellido": "Castro",
     "edad": 31,
     "oficina": 28
@@ -798,7 +798,7 @@
   "pk": 37,
   "fields": {
     "nombre": "Carlos",
-    "apellido": "Hernández",
+    "apellido": "Hernandez",
     "edad": 23,
     "oficina": 17
   }
@@ -808,7 +808,7 @@
   "pk": 38,
   "fields": {
     "nombre": "Juan",
-    "apellido": "Hernández",
+    "apellido": "Hernandez",
     "edad": 52,
     "oficina": 14
   }
@@ -858,7 +858,7 @@
   "pk": 43,
   "fields": {
     "nombre": "Elena",
-    "apellido": "Pérez",
+    "apellido": "Perez",
     "edad": 53,
     "oficina": 16
   }
@@ -868,7 +868,7 @@
   "pk": 44,
   "fields": {
     "nombre": "Jorge",
-    "apellido": "López",
+    "apellido": "Lopez",
     "edad": 33,
     "oficina": 23
   }
@@ -878,7 +878,7 @@
   "pk": 45,
   "fields": {
     "nombre": "Elena",
-    "apellido": "Díaz",
+    "apellido": "Diaz",
     "edad": 21,
     "oficina": 15
   }
@@ -888,7 +888,7 @@
   "pk": 46,
   "fields": {
     "nombre": "Jorge",
-    "apellido": "Guzmán",
+    "apellido": "Guzman",
     "edad": 26,
     "oficina": 33
   }
@@ -897,7 +897,7 @@
   "model": "persona.persona",
   "pk": 47,
   "fields": {
-    "nombre": "Sofía",
+    "nombre": "Sofia",
     "apellido": "Castro",
     "edad": 24,
     "oficina": 23
@@ -917,7 +917,7 @@
   "model": "persona.persona",
   "pk": 49,
   "fields": {
-    "nombre": "Lucía",
+    "nombre": "Lucia",
     "apellido": "Flores",
     "edad": 59,
     "oficina": 14
@@ -928,7 +928,7 @@
   "pk": 50,
   "fields": {
     "nombre": "Camila",
-    "apellido": "Guzmán",
+    "apellido": "Guzman",
     "edad": 53,
     "oficina": 20
   }
@@ -948,7 +948,7 @@
   "pk": 52,
   "fields": {
     "nombre": "Elena",
-    "apellido": "Ramírez",
+    "apellido": "Ramirez",
     "edad": 34,
     "oficina": 4
   }
@@ -968,7 +968,7 @@
   "pk": 54,
   "fields": {
     "nombre": "Isabel",
-    "apellido": "López",
+    "apellido": "Lopez",
     "edad": 37,
     "oficina": 10
   }
@@ -988,7 +988,7 @@
   "pk": 56,
   "fields": {
     "nombre": "Laura",
-    "apellido": "Guzmán",
+    "apellido": "Guzman",
     "edad": 27,
     "oficina": 18
   }
@@ -1008,7 +1008,7 @@
   "pk": 58,
   "fields": {
     "nombre": "Pedro",
-    "apellido": "Díaz",
+    "apellido": "Diaz",
     "edad": 52,
     "oficina": 29
   }
@@ -1025,7 +1025,7 @@
   "model": "oficina.oficina",
   "pk": 2,
   "fields": {
-    "nombre": "Mister Frío SA",
+    "nombre": "Mister Frio SA",
     "nombreCorto": "MFSA"
   }
 },
@@ -1089,7 +1089,7 @@
   "model": "oficina.oficina",
   "pk": 11,
   "fields": {
-    "nombre": "Oficina Técnica",
+    "nombre": "Oficina Tecnica",
     "nombreCorto": "OTEC"
   }
 },
@@ -1113,7 +1113,7 @@
   "model": "oficina.oficina",
   "pk": 14,
   "fields": {
-    "nombre": "Oficina de Logística",
+    "nombre": "Oficina de Logistica",
     "nombreCorto": "OLOG"
   }
 },
@@ -1145,7 +1145,7 @@
   "model": "oficina.oficina",
   "pk": 18,
   "fields": {
-    "nombre": "Oficina de Innovación",
+    "nombre": "Oficina de Innovacion",
     "nombreCorto": "OINV"
   }
 },
@@ -1185,7 +1185,7 @@
   "model": "oficina.oficina",
   "pk": 23,
   "fields": {
-    "nombre": "Oficina de Producción",
+    "nombre": "Oficina de Produccion",
     "nombreCorto": "OPROD"
   }
 },
@@ -1201,7 +1201,7 @@
   "model": "oficina.oficina",
   "pk": 25,
   "fields": {
-    "nombre": "Oficina de Planificación",
+    "nombre": "Oficina de Planificacion",
     "nombreCorto": "OPLAN"
   }
 },
@@ -1241,7 +1241,7 @@
   "model": "oficina.oficina",
   "pk": 30,
   "fields": {
-    "nombre": "Oficina de Capacitación",
+    "nombre": "Oficina de Capacitacion",
     "nombreCorto": "OCAP"
   }
 },
@@ -1249,7 +1249,7 @@
   "model": "oficina.oficina",
   "pk": 31,
   "fields": {
-    "nombre": "Oficina de Atención al Cliente",
+    "nombre": "Oficina de Atencion al Cliente",
     "nombreCorto": "OAC"
   }
 },
@@ -1265,7 +1265,7 @@
   "model": "oficina.oficina",
   "pk": 33,
   "fields": {
-    "nombre": "Oficina de Auditoría",
+    "nombre": "Oficina de Auditoria",
     "nombreCorto": "OAUD"
   }
 },

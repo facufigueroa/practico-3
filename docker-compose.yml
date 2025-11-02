@@ -4,14 +4,16 @@ services:
     env_file:
       - .env
     environment: # Variables de entorno.
-      - POSGRES_DB: ${POSGRES_DB}
-      - POSGRES_USER: ${POSGRES_USER}
-      - POSGRES_PASSWORD: ${POSGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
     volumes:
       - db-data:/var/lib/postgresql/data # Volumen para persistencia de datos.
   web:
     build: . # Usa el Dockerfile que está en el mismo directorio.
-    command: sh -c "sleep 5 && python manage.py runserver 0.0.0.0:8000" # Comando que se ejecuta al iniciar el contenedor.
+    command: sh -c "sleep 5 && python manage.py migrate && python manage.py runserver 0.0.0.0:8000" # Comando que se ejecuta al iniciar el contenedor.
     ports:
       - "8000:8000" # El puerto 8000 personal se mapea con el puerto 8000 del container, para ponernos en contacto con nuestra app.
     volumes:
@@ -19,4 +21,9 @@ services:
     env_file:
       - .env
     environment:
-      - DATABASE_URL: postgres://${POSGRES_USER}:${POSGRES_PASSWORD}@{POSTGRES_HOST}:${POSTGRES_PORT}/${POSGRES_DB} # Cadena de conexión a la base de datos.
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB} # Cadena de conexión a la base de datos.
+    depends_on:
+      - db
+
+volumes:
+  db-data: # Definición del volumen para la base de datos.
